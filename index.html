@@ -10,39 +10,87 @@
 
 body{
     margin:0;
-    background:#f4f7fb;
+    background:#eef3f8;
     font-family:Arial,sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
     min-height:100vh;
+    padding:20px;
 }
 
 .player{
-    width:90%;
-    max-width:500px;
+    width:100%;
+    max-width:380px;
     background:white;
-    border-radius:20px;
-    padding:30px;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+.topbar{
+    background:#033256;
+    color:white;
+    padding:18px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
 .logo{
-    font-size:32px;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.subtitle{
+    font-size:13px;
+    opacity:.8;
+    margin-top:4px;
+}
+
+.content{
+    padding:25px;
+    text-align:center;
+}
+
+.song-title{
+    font-size:22px;
     font-weight:bold;
     color:#033256;
     margin-bottom:10px;
 }
 
-.title{
-    font-size:20px;
-    margin-bottom:20px;
-    color:#444;
+.artist{
+    color:#666;
+    font-size:15px;
+    margin-bottom:25px;
 }
 
 audio{
     width:100%;
+    margin-bottom:25px;
+}
+
+.back-button{
+    display:inline-block;
+    width:100%;
+    padding:14px;
+    border-radius:14px;
+    background:#033256;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    box-sizing:border-box;
+    transition:.2s;
+}
+
+.back-button:hover{
+    opacity:.9;
+}
+
+.footer{
+    margin-top:18px;
+    font-size:12px;
+    color:#888;
 }
 
 </style>
@@ -52,17 +100,40 @@ audio{
 
 <div class="player">
 
-    <div class="logo">
-        Joy Radio
+    <div class="topbar">
+        <div class="logo">
+            Joy Radio
+        </div>
+
+        <div class="subtitle">
+            Music That Points People To Christ
+        </div>
     </div>
 
-    <div class="title">
-        Give Them A Faith That Remains
-    </div>
+    <div class="content">
 
-    <audio controls autoplay>
-        <source src="give-them-a-faith-that-remains.mp3" type="audio/mpeg">
-    </audio>
+        <div class="song-title">
+            Give Them A Faith That Remains
+        </div>
+
+        <div class="artist">
+            Joy Baptist Church
+        </div>
+
+        <audio controls preload="metadata">
+            <source src="Give%20Them%20A%20Faith%20That%20Remains.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+
+        <a class="back-button" href="https://joybaptist.church">
+            ← Back To Joy Baptist Church
+        </a>
+
+        <div class="footer">
+            Thanks for listening to Joy Radio
+        </div>
+
+    </div>
 
 </div>
 
