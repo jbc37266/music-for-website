@@ -7,7 +7,6 @@
 <title>Joy Radio</title>
 
 <style>
-
 body{
     margin:0;
     background:#eef3f8;
@@ -41,12 +40,6 @@ body{
     letter-spacing:1px;
 }
 
-.subtitle{
-    font-size:13px;
-    opacity:.8;
-    margin-top:4px;
-}
-
 .content{
     padding:25px;
     text-align:center;
@@ -56,12 +49,6 @@ body{
     font-size:22px;
     font-weight:bold;
     color:#033256;
-    margin-bottom:10px;
-}
-
-.artist{
-    color:#666;
-    font-size:15px;
     margin-bottom:25px;
 }
 
@@ -80,11 +67,6 @@ audio{
     text-decoration:none;
     font-weight:bold;
     box-sizing:border-box;
-    transition:.2s;
-}
-
-.back-button:hover{
-    opacity:.9;
 }
 
 .footer{
@@ -92,7 +74,6 @@ audio{
     font-size:12px;
     color:#888;
 }
-
 </style>
 </head>
 
@@ -101,13 +82,7 @@ audio{
 <div class="player">
 
     <div class="topbar">
-        <div class="logo">
-            Joy Radio
-        </div>
-
-        <div class="subtitle">
-            Music That Points People To Christ
-        </div>
+        <div class="logo">Joy Radio</div>
     </div>
 
     <div class="content">
@@ -116,12 +91,8 @@ audio{
             Give Them A Faith That Remains
         </div>
 
-        <div class="artist">
-            Joy Baptist Church
-        </div>
-
-        <audio controls preload="metadata">
-            <source src="Give%20Them%20A%20Faith%20That%20Remains.mp3" type="audio/mpeg">
+        <audio controls preload="auto">
+            <source src="./faith.mp3" type="audio/mpeg">
             Your browser does not support audio playback.
         </audio>
 
